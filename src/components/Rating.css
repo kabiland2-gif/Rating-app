@@ -1,0 +1,86 @@
+.rating-container {
+  position: fixed;
+  inset: 0;
+
+  background-image: url("../assets/hotel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+/* Dark overlay */
+.rating-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* Content above overlay */
+.rating-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Heading */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Stars */
+.stars {
+  font-size: 50px;
+}
+
+.star {
+  color: #94a3b8;
+  cursor: pointer;
+  margin: 8px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.active {
+  color: gold;
+}
+
+/* Text */
+p {
+  margin-top: 15px;
+  color: #e5e7eb;
+}
+
+/* Summary */
+.summary-box {
+  width: 320px;
+  margin-top: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #475569;
+}
+
+.gold {
+  color: gold;
+}
+
+h2 {
+  margin-top: 20px;
+  color: gold;
+}

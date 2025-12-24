@@ -1,0 +1,43 @@
+.rating-container {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Stars */
+.stars {
+  font-size: 48px;
+}
+
+.star {
+  color: #64748b;
+  cursor: pointer;
+  margin: 8px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.active {
+  color: gold;
+}
+
+/* Text */
+p {
+  margin-top: 15px;
+  color: #cbd5f5;
+}
